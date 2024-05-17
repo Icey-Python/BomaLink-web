@@ -10,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+      mogra: ["mogra", "sans-serif"],
+    },
   },
   plugins: [],
 }
