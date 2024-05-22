@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Landing from "@/components/Landing";
+import AboutUs from "@/components/AboutUs";
 
 export default function Home() {
   return (
       <main>
-      <h1 className="text-3xl font-bold font-mogra">Mogra font use</h1>
-      <h1 className="text-3xl font-bold font-poppins">Poppins font use</h1>
+        <Landing></Landing>
+        <AboutUs tagId="service"></AboutUs>
       </main>
   );
 }
