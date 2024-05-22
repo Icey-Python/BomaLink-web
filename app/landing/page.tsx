@@ -8,9 +8,9 @@ const page = () => {
   return (
     <div className="h-screen flex justify-center bg-gradient-to-r from-[#D6F9C6] to-[#D6F9C6]">
         <div className="absolute left-0 top-0 h-4/6 w-3/6 rounded-r-full blur-3xl rounded-b-full border-2 border-red-500 bg-gradient-to-r from-[#238636]"></div>
-        <div className=" w-full h-full glass rounded-2xl self-center flex justify-center">            
-            <div className="w-[100rem] h-[800px]  self-center rounded-3xl bg-no-repeat bg-black glass" >
-                <div className="w-full h-full bg-[#021500] bg-opacity-55 self-center rounded-3xl space-y-8">
+        <div className=" w-full h-full flex justify-center ">            
+            <div className="w-[110rem] h-[800px] backdrop-filter backdrop-blur-3xl self-center rounded-3xl bg-no-repeat  z-40 "style={{ backgroundImage: `url(${"/newlanding2.jpg"})`, backgroundSize: 'cover' }} >
+                <div className="w-full h-full bg-[#021500] glasss bg-opacity-60  self-center rounded-3xl space-y-10 pl-6">
                     <div className="flex justify-between items-center">
                         <Image src="/Logo.png" alt="logo" width={160} height={140} className="p-2" ></Image>
                         <div className="space-x-2 pr-10 text-white font-bold">
@@ -31,12 +31,14 @@ const page = () => {
                                 <button  className="text-white text-xl font-poppins  bg-transparent p-4 ml-0 m-4 border-2 border-[#224103] rounded-full w-[200px] h-[65px] hover:text-[#47F969] hover:border-[#47F969]">Learn More</button>
                             </div>
                         </div>
-                        <Image src="/Phone.png" alt="phone" width={350} height={100} className="pr-10"></Image>
+                        <div className="mb-6" >
+                            <Image src="/Phone.png" alt="phone" width={350} height={100} className="pr-10 "></Image>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="absolute blur-3xl right-0 bottom-0 h-5/6 w-96 rounded-t-full rounded-l-full  bg-gradient-to-l  from-[#238636]">02</div>
+        <div className="absolute blur-3xl right-0 bottom-0 h-5/6 w-96 rounded-t-full rounded-l-full  bg-gradient-to-l  from-[#238636] z-0">02</div>
     </div>
   )
 }
