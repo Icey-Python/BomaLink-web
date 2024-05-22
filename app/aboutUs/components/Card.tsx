@@ -7,7 +7,7 @@ interface Props{
 }
 const Card = ({iconPath,title,children}:Props) => {
   return (
-    <div className="bg-white rounded-xl p-5 mx-2">
+    <div className="rounded-xl p-5 mx-2">
         <Image className="mx-auto" src={`/icons/${iconPath}`} alt='Icon' width={120} height={106} style={{
         width: 'auto', // Make the image width responsive
         height: '120px', // Maintain aspect ratio by setting height to auto
