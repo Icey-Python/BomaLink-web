@@ -4,7 +4,7 @@ import AboutUs from "@/components/AboutUs";
 
 export default function Home() {
   return (
-      <main>
+      <main className="overflow-hidden ">
         <Landing></Landing>
         <AboutUs tagId="service"></AboutUs>
       </main>
