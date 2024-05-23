@@ -3,16 +3,16 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <footer className="bg-green-950 text-green-200 py-8 px-4">
+    <footer className="bg-green-950 text-green-200 py-12 w-screen">
       <div className="flex flex-col md:flex-row justify-around items-start md:items-center">
-        <div className="flex items-center mb-4 md:mb-0">
+        <div className="flex items-center md:mb-0">
           <div className="relative w-20 h-20 mr-3">
             <Image 
               src="/logo-with-name.png" 
               alt="Logo"
             //   layout="fill"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               objectFit="contain"
               className="rounded-full"
             />
