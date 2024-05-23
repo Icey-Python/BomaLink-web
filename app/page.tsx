@@ -1,10 +1,14 @@
 import Image from "next/image";
+import HomeSection from "@/components/Home";
+import OurServices from "@/components/OurServices";
+import OurStory from "@/components/OurStory";
 
 export default function Home() {
   return (
       <main>
-      <h1 className="text-3xl font-bold font-mogra">Mogra font use</h1>
-      <h1 className="text-3xl font-bold font-poppins">Poppins font use</h1>
+        <HomeSection />
+        <OurStory tagId="story"/>
+        <OurServices tagId="service"/>
       </main>
   );
 }

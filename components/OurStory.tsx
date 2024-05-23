@@ -3,10 +3,13 @@ import ScrollCard from "@/components/ScrollCard";
 import { Film, Tractor } from 'lucide-react';
 
 import Image from "next/image"
-const page = () => {
+interface Props{
+tagId : string
+}
+const OurStory = ({tagId}:Props) => {
   const name = "AGRIMEET"
   return (
-    <section className="w-screen h-screen bg-[#021500] text-white font-poppins flex-col relative">
+    <section className="w-screen h-screen bg-[#021500] text-white font-poppins flex-col relative" id={tagId}>
     <span className="absolute text-8xl font-bold text-white/5 z-0">{name}</span>
     <Marquee  pauseOnHover={true} style={{position:"absolute",top:"50%",transform:"translateY(-50%)",width:"100%",height:"fit-content",zIndex:"100"}} speed={15} autoFill={true}>
     <ScrollCard path={"/farmer-with-goat.png"}/>
@@ -36,4 +39,4 @@ const page = () => {
   )
 }
 
-export default page
+export default OurStory
