@@ -21,8 +21,8 @@ const HomeSection = () => {
                         </div>
                     </div>
                     <div className="flex space-x-20">
-                        <div className="p-6 pt-20 pr-24 space-y-10">
-                            <p className="p-0 m-0 text-[190px] font-mogra text-white drop-shadow-md leading-10">BomaLink</p>
+                        <div className="p-6 pt-20 pr-24 space-y-6">
+                            <p className="p-0 m-0 text-[190px] font-mogra text-white drop-shadow-md leading-none">Agrimeet</p>
                             <div className="space-y-8">
                                 <p className="text-4xl text-[#D6F9C6] font-monteserrat drop-shadow-md leading-none font-extralight">Maamuzi sahihi, ushirikiano wa kudumu</p>
                                 <p className="text-white text-2xl font-poppins">A mobile app aimed at fostering peaceful coexistence <br/> between Kenyan pastoralists and agriculturalists <br/> by creating a digital platform that addresses resource conflict.</p>
