@@ -1,4 +1,4 @@
-import Card from "./components/Card"
+import Card from "@/components/Card"
 const aboutus = () => {
   return (
     <section className='p-10 font-poppins bg-[#D6F9C6] h-screen w-screen'>

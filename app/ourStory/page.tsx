@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee";
-import ScrollCard from "./components/ScrollCard";
+import ScrollCard from "@/components/ScrollCard";
 import { Film, Tractor } from 'lucide-react';
 
 import Image from "next/image"
