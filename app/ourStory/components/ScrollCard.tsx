@@ -7,8 +7,9 @@ interface Props{
 
 const ScrollCard = ({path}:Props) => {
   return (
-    <Image src={path} height={353} width={488} alt='Marquee Image'className='mx-2' style={{height:"180px",width:"auto"}}/>
+    <Image className="mx-5 hover:scale-110 hover:mx-5 transition ease-in-out duration-700" src={path} height={353} width={488} alt='Marquee Image' style={{height:"180px",width:"auto"}}/>
   )
 }
 
 export default ScrollCard
+
