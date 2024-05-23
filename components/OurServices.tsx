@@ -1,7 +1,6 @@
 "use client"
 import Card from "@/components/Card"
 import { useState } from "react"
-import { Download } from "lucide-react"
 interface Props{
   tagId : string
 }
