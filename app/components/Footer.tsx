@@ -6,7 +6,7 @@ function Footer() {
     <footer className="bg-green-950 text-green-200 py-12 w-screen">
       <div className="flex flex-col md:flex-row justify-around items-start md:items-center">
         <div className="flex items-center md:mb-0">
-          <div className="relative w-20 h-20 mr-3">
+          <div className="absolute bottom-[18%] translate-y-[40%] left-[3%] w-32 h-32 mr-3 bg-white rounded-full border-[#D6F9C6] border-8">
             <Image 
               src="/logo-with-name.png" 
               alt="Logo"
@@ -17,7 +17,7 @@ function Footer() {
               className="rounded-full"
             />
           </div>
-          <div>
+          <div className='ml-10'>
             <h3 className="text-xl font-bold text-white">BOMALINK</h3>
             <p className="text-sm">Maamuzi sahihi, ushirikiano wa kudumu</p>
           </div>
