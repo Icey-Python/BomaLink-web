@@ -1,8 +1,8 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 import Image from "next/image";
-import profileCard from "./components/ProfileCard";
-import ProfileCard from "./components/ProfileCard";
+import profileCard from "../../components/ProfileCard";
+import ProfileCard from "../../components/ProfileCard";
 
 const page = () => {
   return (

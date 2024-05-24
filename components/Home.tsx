@@ -9,7 +9,7 @@ const HomeSection = () => {
         <div className="absolute left-0 top-0 h-4/6 w-3/6 rounded-r-full blur-3xl rounded-b-full border-2 border-red-500 bg-gradient-to-r from-[#238636]"></div>
         <div className=" w-full h-full flex justify-center ">            
             <div className="w-full h-full backdrop-filter backdrop-blur-3xl self-center bg-no-repeat  z-40 "style={{ backgroundImage: `url(${"/newlanding2.jpg"})`, backgroundSize: 'cover' }} >
-                <div className="w-full h-full bg-[#021500] glasss bg-opacity-60  self-center rounded-3xl space-y-10 pl-6">
+                <div className="w-full h-full bg-[#021500] glasss bg-opacity-60  self-center space-y-10 pl-6">
                     <div className="flex justify-between items-center">
                         <Image src="/Logo.png" alt="logo" width={160} height={140} className="p-2" ></Image>
                         <div className="space-x-2 pr-10 text-white font-bold will-change-scroll">
