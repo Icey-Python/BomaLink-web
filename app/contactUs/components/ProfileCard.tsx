@@ -1,4 +1,5 @@
 import Image from "next/image"
+import React from "react"
 declare namespace JSX{
 interface Props{
     path: string,
@@ -8,26 +9,26 @@ interface Props{
     skills:Array<string>
 }
 }
-const profileCard = ({path,position,linkedIn,name,skills}:JSX.Props) => {
+const ProfileCard = ({path,position,linkedIn,name,skills}:JSX.Props) => {
   return (
-    <div className="bg-white relative m-5 p-5 rounded-3xl shadow-lg overflow-hidden flex flex-col items-center gap-0.5 w-7/13">
-          <div className="flex space-x">
+    <div className="bg-white relative  p-3 rounded-3xl shadow-lg overflow-hidden flex flex-col items-center  max-w-fit">
+          <div className="flex ">
             <div>
               <Image
                 src={path}
                 alt="Profile Photo"
-                width={300}
-                height={300}
+                width={150}
+                height={150}
                 className="rounded-full  ml-0  h-full  object-cover mr-1"
               />
             </div>
             <div className="ml-5">
               <h2 className="text-xl font-bold mb-1">{name}</h2>
               <div className="flex space-x-2 mb-2">
-                <span className="bg-green-300 p-2 rounded-md text-sm">
+                <span className="bg-green-300 p-2 rounded-full text-sm">
                  {skills[0]}
                 </span>
-                <span className="bg-green-300 p-2 rounded-md text-sm">
+                <span className="bg-green-300 p-2 rounded-full text-sm">
                   {skills[1]}
                 </span>
               </div>
@@ -46,8 +47,8 @@ const profileCard = ({path,position,linkedIn,name,skills}:JSX.Props) => {
                 <Image
                 src="/icons/school-icon.svg"
                 alt="school"
-                width={50}
-                height={50}
+                width={30}
+                height={30}
                 />
               <p className="text-sm  p-2.5 ml-0">
                 Jomo Kenyatta University of Agriculture and Technology
@@ -59,4 +60,4 @@ const profileCard = ({path,position,linkedIn,name,skills}:JSX.Props) => {
   )
 }
 
-export default profileCard
+export default ProfileCard
