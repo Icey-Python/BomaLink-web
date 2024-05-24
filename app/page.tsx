@@ -5,7 +5,7 @@ import OurStory from "@/components/OurStory";
 
 export default function Home() {
   return (
-      <main>
+      <main className="overflow-hidden scroll-smooth">
         <HomeSection />
         <OurStory tagId="story"/>
         <OurServices tagId="service"/>
