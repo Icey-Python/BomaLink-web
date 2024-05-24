@@ -11,14 +11,14 @@ const OurStory = ({tagId}:Props) => {
   return (
     <section className="w-screen h-screen bg-[#021500] text-white font-poppins flex-col relative" id={tagId}>
     <span className="absolute text-8xl font-bold text-white/5 z-0">{name}</span>
-    <Marquee  pauseOnHover={true} style={{position:"absolute",top:"50%",transform:"translateY(-50%)",width:"100%",height:"fit-content",zIndex:"100"}} speed={15} autoFill={true}>
+    <Marquee  pauseOnHover={true} style={{position:"absolute",top:"50%",overflowY:"hidden",transform:"translateY(-50%)",width:"100%",height:"fit-content",zIndex:"100"}} speed={15} autoFill={true}>
     <ScrollCard path={"/farmer-with-goat.png"}/>
     <ScrollCard path={"/farmer-with-goats.png"}/>
     <ScrollCard path={"/cows.png"}/>
     <ScrollCard path={"/farm.png"}/>
    </Marquee>
     <div className="font-bold text-6xl h-1/2 px-20 py-8 z-10 relative">
-    <p>Coexistence between farmers <br/> & <br/> pastoralists</p>
+    <p className="text-center mx-auto w-fit text-7xl">Coexistence between  <br/> farmers and pastoralists</p>
     <Tractor className="text-white/50 absolute top-1/3 right-20" size={80}/>
     <span className="absolute top-1/3 left-1/4 text-9xl font-bold text-white/5 z-0">{name}</span>
     <span className="absolute top-3/4 right-1 text-8xl font-bold text-white/5 z-0">{name}</span>
