@@ -10,8 +10,8 @@ interface Props{
 
 const Team = ({tagId,footerId}:Props) => {
   return (
-    <div className="bg-gradient-to-r from-[#D6F9C6] to-[#D6F9C6] font-poppins w-screen overflow-x-hidden" id={tagId}>
-      <h1 className="text-green-900 mb-5 pb-5 text-7xl font-poppins font-bold text-center">
+    <div className="bg-gradient-to-r from-[#D6F9C6] to-[#D6F9C6] font-poppins w-screen overflow-x-hidden " id={tagId}>
+      <h1 className="text-green-900 mb-5 pb-5 text-7xl font-poppins font-bold text-center pt-16">
         The Team
       </h1>
         <div className="grid grid-cols-2 gap-6 w-fit mx-auto mb-4">

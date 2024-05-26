@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 const Header = () => {
 
   return (
-    <div className="flex justify-between items-center backdrop-blur-2xl w-screen h-16 fixed top-0 left-0 z-40 bg-[#021500] bg-opacity-10 drop-shadow-2xl">
+    <div className="flex justify-between items-center backdrop-blur-2xl w-screen h-16 fixed top-0 left-0 z-40 bg-[#021500] bg-opacity-20 drop-shadow-2xl">
         <Image src="/Logo.png" alt="logo" width={100} height={100} className="p-2" ></Image>
         <div className="space-x-2 pr-10 text-white font-bold will-change-scroll">
             <Navlink label="HOME" path="#Home" ></Navlink>
