@@ -1,6 +1,4 @@
 import Image from "next/image"
-import Navlink from "@/components/Navlink"
-import Header from "@/components/Header"
 
 interface Props{
     tagId : string

@@ -8,7 +8,7 @@ import Header from "@/components/Header";
 export default function Home() {
    
   return (
-      <main className="overflow-hidden relative">
+      <main className="overflow-hidden relative ">
         <Header />
         <HomeSection tagId="Home"/>
         <OurStory tagId="story"/>

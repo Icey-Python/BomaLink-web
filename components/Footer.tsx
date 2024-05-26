@@ -10,15 +10,15 @@ function Footer({tagId}:Props) {
     <footer className="bg-green-950 text-green-200 py-12 w-screen"id={tagId}>
       <div className="flex flex-col md:flex-row justify-around items-start md:items-center">
         <div className="flex items-center md:mb-0">
-          <div className="absolute left-[3%] w-32 h-32 mr-3 bg-white rounded-full border-[#D6F9C6] border-8" >
+          <div className="absolute left-[3%] bottom-[3%] w-32 h-32 mr-3 bg-white rounded-full border-[#D6F9C6] border-8" >
             <Image 
-              src="/logo-with-name.png" 
+              src="/Footerlogo.png" 
               alt="Logo"
             //   layout="fill"
               width={300}
               height={300}
               objectFit="contain"
-              className="rounded-full"
+              className="rounded-full self-center pt-2 pl-2"
             />
           </div>
           <div className='ml-10'>
