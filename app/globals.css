@@ -14,3 +14,10 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
+
+.active {
+    color: #47F969;
+    text-decoration: underline;
+    text-decoration-color: #47F969;
+    text-underline-offset: 8px;
+}
