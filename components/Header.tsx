@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import Navlink from './Navlink'
-import { useEffect, useState } from 'react';
 
 
 
