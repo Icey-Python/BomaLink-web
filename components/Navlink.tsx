@@ -1,29 +1,59 @@
 "use client"
-
-import Link from "next/link"
-import React from "react"
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 interface NavlinkProps {
-    label: string,
-    path: string
+  label: string;
+  path: string;
 }
 
-const Navlink: React.FC<NavlinkProps> = ({label, path}) => {
-   const handleClick = (event: React.MouseEvent) => {
+const Navlink: React.FC<NavlinkProps> = ({ label, path }) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = (event: React.MouseEvent) => {
     event.preventDefault();
     const target = document.getElementById(path.replace('#', ''));
     if (target) {
       window.scrollTo({
         top: target.offsetTop,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
+      history.pushState(null, '', path);
     }
-  }
+  };
 
+   useEffect(() => {
+    const target = document.getElementById(path.replace('#', ''));
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsActive(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          history.pushState(null, '', path);
+        }
+      },
+      { threshold: [0], rootMargin: '-50% 0px -50% 0px' }
+    );
+
+    if (target) {
+      observer.observe(target);
+    }
+
+    return () => {
+      if (target) {
+        observer.unobserve(target);
+      }
+    };
+  }, [path]);
 
   return (
-    <Link   className=" underline  underline-offset-8 decoration-transparent transition-all hover:duration-700 ease-in duration-400 p-3 pt-2 pb-2 rounded-full hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-white focus:underline focus:decoration-2 focus:underline-offset-8 focus:decoration-[#47F969] focus:text-[#47F969]" href={path} onClick={handleClick}>{label}</Link>
-  )
-}
+     <Link
+      className={`transition-all hover:duration-700 ease-in duration-400 p-3 pt-2 pb-2 rounded-full hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-white focus:active ${isActive ? 'active' : ''}`}
+      href={path}
+      onClick={handleClick}
+    >
+      {label}
+    </Link>
+  );
+};
 
-export default Navlink
+export default Navlink;

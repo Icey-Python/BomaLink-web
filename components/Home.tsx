@@ -2,11 +2,14 @@ import Image from "next/image"
 import Navlink from "@/components/Navlink"
 import Header from "@/components/Header"
 
+interface Props{
+    tagId : string
+    
+}
 
-
-const HomeSection = () => {
+const HomeSection = ({tagId}:Props) => {
   return (          
-            <div className="w-screen h-screen backdrop-filter backdrop-blur-3xl self-center bg-no-repeat  "style={{ backgroundImage: `url(${"/newlanding2.jpg"})`, backgroundSize: 'cover' }} >
+            <div className="w-screen h-screen backdrop-filter backdrop-blur-3xl self-center bg-no-repeat  "style={{ backgroundImage: `url(${"/newlanding2.jpg"})`, backgroundSize: 'cover' }} id={tagId}>
                 <div className="w-full h-full bg-[#021500] glasss bg-opacity-60 space-y-10 pl-6">
                     <div className="flex justify-between p-10 pt-20">
                         <div className="pt-20  space-y-6">
