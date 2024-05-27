@@ -7,7 +7,7 @@ interface Props{
 }
 const Card = ({iconPath,title,children}:Props) => {
   return (
-    <div className="transition-all duration-700 delay-50 cursor-pointer ease-out bg-transparent  p-5 mx-2 bg-white/50 text-black shadow-2xl z-40 hover:bg-[#238636] hover:bg-opacity-70 group max-w-xl hover:flex " >
+    <div className="transition-all duration-700 delay-50 cursor-pointer ease-out bg-transparent  p-5 mx-2 text-black shadow-2xl z-40 rounded-r hover:bg-[#238636] hover:bg-opacity-70 group max-w-xl hover:flex " >
       <div className="group-hover:hidden">
           <Image className="mx-auto group-hover:scale-75  group-hover:z-0" src={`/icons/${iconPath}`} alt='Icon' width={120} height={106} style={{
             width: 'auto', // Make the image width responsive
@@ -16,6 +16,7 @@ const Card = ({iconPath,title,children}:Props) => {
       </div>
       <div className="">
           <div className="w-full h-2 flex justify-between group-hover:hidden">
+          {/*horizontal lines*/}
             <div className="w-1/3 h-1 bg-black rounded-xl "></div>
             <div className="w-1/3 h-1 bg-black rounded-xl"></div>
           </div>
