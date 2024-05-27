@@ -31,7 +31,7 @@ const OurStory = ({tagId}:Props) => {
     <Film className="text-[#224103]/5  absolute bottom-10 left-20 z-0" size={65}/>
     <span className="bg-[#224103] text-white font-bold p-2 rounded-3xl mt-10">Our story</span>
     <p className="mt-5 text-xl z-20">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum quisquam ipsum maiores voluptatem veritatis obcaecati cumque deleniti quam aliquid doloremque cupiditate amet fugiat sit beatae, ipsa distinctio commodi dolore illum minus. Tempore maxime ad quaerat, illum ipsam, iusto quia placeat voluptatem eveniet vero amet dignissimos, error velit veniam? Unde.
+    We aim to develop a mobile application to facilitate the peaceful coexistence of Kenyan pastoralists and crop farmers by addressing resource conflicts. The app will provide real-time updates on pasture availability, weather forecasts, and GPS-enabled tracking of animals, empowering pastoralists to make informed decisions. By fostering dialogue and providing vital decision-making support, the application seeks to enhance mutual understanding and collaboration between these communities, ensuring sustainable management of shared resources.
     </p>
 
     </div>
