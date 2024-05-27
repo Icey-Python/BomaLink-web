@@ -1,5 +1,5 @@
 import Image from "next/image"
-
+import ParticlesComponent from "./ParticlesComponent"
 interface Props{
     tagId : string
     
@@ -7,8 +7,9 @@ interface Props{
 
 const HomeSection = ({tagId}:Props) => {
   return (          
-            <div className="w-screen h-screen backdrop-filter backdrop-blur-3xl self-center bg-no-repeat  "style={{ backgroundImage: `url(${"/newlanding2.jpg"})`, backgroundSize: 'cover' }} id={tagId}>
-                <div className="w-full h-full bg-[#021500] glasss bg-opacity-60 space-y-10 pl-6">
+            <div className="w-screen h-screen backdrop-filter backdrop-blur-3xl self-center bg-no-repeat cursor-pointer" style={{ backgroundImage: `url(${"/newlanding2.jpg"})`, backgroundSize: 'cover' }} id={tagId}>
+        <ParticlesComponent className={"w-1/2"} id={"particles"}/>     
+                <div className="w-full h-full bg-[#021500] glasss bg-opacity-60 space-y-10 pl-6" style={{backdropFilter:"blur(2px)"}}>
                     <div className="flex justify-between p-10 pt-20">
                         <div className="pt-20  space-y-6">
                             <p className="text-[190px] font-mogra text-white drop-shadow-md leading-none">Agrimeet</p>
@@ -19,7 +20,7 @@ const HomeSection = ({tagId}:Props) => {
                                 <button  className="text-white text-xl font-poppins  bg-transparent p-4 ml-0 m-4 border-2 border-[#224103] rounded-full w-[200px] h-[65px] hover:text-[#47F969] hover:border-[#47F969]">Learn More</button>
                             </div>
                         </div>
-                        <div className="mt-20 pr-20 mr-20" >
+                        <div className="mt-20 pr-20 mr-20 z-20" >
                             <Image src="/Phone.png" alt="phone" width={350} height={100} ></Image>
                         </div>
                     </div>
