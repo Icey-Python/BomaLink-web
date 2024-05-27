@@ -7,7 +7,7 @@ interface Props{
 const OurServices = ({tagId}:Props) => {
 
   return (
-    <section className='pt-5 font-poppins bg-[#D6F9C6] h-screen w-screen glasss ' id={tagId}>
+    <section className='py-5 font-poppins bg-[#D6F9C6] h-fit w-screen glasss' id={tagId}>
       <h2 className='text-6xl font-bold text-green-900 px-2 border-green-900 z-10 mt-2 text-center leading-10 pt-16'>Services</h2>
       <p className="text-xl py-6 font-poppins font-medium text-center" >Are you a pastoralist or a farmer? Then you are in the right place. <br/> We aim to bring you a digital platform that promotes the peaceful coexistence between <br/>pastoralists and farmers by nullify resource conflict through the following features:</p>
       <div className="mx-auto pt-3 grid grid-cols-2 gap-6 mx-auto w-fit" >

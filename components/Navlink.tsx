@@ -47,7 +47,7 @@ const Navlink: React.FC<NavlinkProps> = ({ label, path }) => {
 
   return (
      <Link
-      className={`transition-all hover:duration-700 ease-in duration-400 p-3 pt-2 pb-2 rounded-full hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-white focus:active ${isActive ? 'active' : ''}`}
+      className={`transition-all hover:duration-700 ease-in duration-400 px-3 mx-3 rounded-full hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-white focus:active ${isActive ? 'active' : ''}`}
       href={path}
       onClick={handleClick}
     >
