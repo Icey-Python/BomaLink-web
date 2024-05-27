@@ -21,7 +21,7 @@ function Footer({tagId}:Props) {
               className="rounded-full self-center pt-2 pl-2"
             />
           </div>
-          <div className='ml-10'>
+          <div className='ml-20'>
             <h3 className="text-xl font-bold text-white">BOMALINK</h3>
             <p className="text-sm">Maamuzi sahihi, ushirikiano wa kudumu</p>
           </div>
