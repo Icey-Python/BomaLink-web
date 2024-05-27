@@ -1,6 +1,5 @@
 "use client"
 import Card from "@/components/Card"
-
 interface Props{
   tagId : string
 }
@@ -23,7 +22,6 @@ const OurServices = ({tagId}:Props) => {
         
             <Card iconPath={"marketing-platform.svg"} title="Market Platform">Our app includes a user-friendly marketplace where farmers can list sell their farm produce, while pastoralists can sell livestock such as cattle, sheep, goats, and more. </Card>     
       </div>
-     
     </section>
   )
 }
