@@ -7,10 +7,10 @@ interface Props {
 
 function Footer({tagId}:Props) {
   return (
-    <footer className="bg-green-950 text-green-200 py-12 w-screen"id={tagId}>
-      <div className="flex flex-col md:flex-row justify-around items-start md:items-center">
+    <footer className="bg-green-950 text-green-200 w-screen h-fit py-2"id={tagId}>
+      <div className="flex flex-col mx-auto md:mx-0 lg:mx-0 md:flex-row justify-around items-start md:items-center w-full h-fit">
         <div className="flex items-center md:mb-0">
-          <div className="absolute left-[3%] bottom-[3%] w-32 h-32 mr-3 bg-white rounded-full border-[#D6F9C6] border-8" >
+          <div className="absolute left-[3%] bottom-[3%] w-32 h-32 mr-3 bg-white rounded-full border-[#D6F9C6] border-8 invisible md:visible lg:visible" >
             <Image 
               src="/Footerlogo.png" 
               alt="Logo"
@@ -18,27 +18,28 @@ function Footer({tagId}:Props) {
               width={300}
               height={300}
               objectFit="contain"
-              className="rounded-full self-center pt-2 pl-2"
+              className="invisible md:visible lg:visible rounded-full self-center pt-2 pl-2"
             />
           </div>
-          <div className='ml-20'>
+          <div className='ml-20 mb-4 md:mb-0 lg:mb-0'>
             <h3 className="text-xl font-bold text-white">BOMALINK</h3>
             <p className="text-sm">Maamuzi sahihi, ushirikiano wa kudumu</p>
           </div>
         </div>
-        <div className="mb-4 md:mb-0">
+        <div className="ml-20 md:ml-0 lg:ml-0 mb-4 md:mb-0">
           <h3 className="text-lg font-bold">Company</h3>
           <p className="text-sm">FAQs</p>
           <p className="text-sm">Team</p>
         </div>
-        <div className="mb-4 md:mb-0">
+        <div className="ml-20 md:ml-0 lg:ml-0 mb-4 md:mb-0">
           <h3 className="text-lg font-bold">Explore</h3>
           <p className="text-sm">Services</p>
           <p className="text-sm">Related Agencies</p>
         </div>
-        <div>
+        <div className="ml-20 md:ml-0 lg:ml-0 mb-4 md:mb-0">
           <h3 className="text-lg font-bold">Get in touch</h3>
           <p className="text-sm">email@jhubafrica.com</p>
+          {/*hotline*/}
           <p className="text-sm">+1(238) 468-150-231</p>
         </div>
       </div>
