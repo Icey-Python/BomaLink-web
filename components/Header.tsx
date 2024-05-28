@@ -24,7 +24,7 @@ const Header = () => {
             <Navlink label="THE TEAM" path="#team"></Navlink>
             <button className="font-poppins transition duration-500 bg-transparent p-2 border-2 border-[#224103] h-fit rounded-full text-white hover:text-[#021500] hover:bg-[#47f969]"><ArrowDownToLine/></button>
         </div>
-        <div className='lg:hidden ' onClick={openDropDown}><Menu/></div>
+        <div className='lg:hidden pr-4' onClick={openDropDown}><Menu/></div>
         {isOpen && (
             <div className="absolute top-[70px] backdrop-blur-2xl bg-black/50 right-0 bg-transparent  shadow shadow-[#021500]-500/40 w-40 font-bold border-2 border-r-0 border-t-0">
               <ul>
