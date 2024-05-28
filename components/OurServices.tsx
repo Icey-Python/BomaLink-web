@@ -1,3 +1,4 @@
+
 "use client"
 import Card from "@/components/Card"
 interface Props{
@@ -8,9 +9,9 @@ const OurServices = ({tagId}:Props) => {
 
   return (
     <section className='py-5 font-poppins bg-[#D6F9C6] h-fit w-screen glasss' id={tagId}>
-      <h2 className='text-6xl font-bold text-green-900 px-2 border-green-900 z-10 mt-2 text-center leading-10 pt-16'>Services</h2>
-      <p className="text-xl py-6 font-poppins font-medium text-center" >Are you a pastoralist or a farmer? Then you are in the right place. <br/> We aim to bring you a digital platform that promotes the peaceful coexistence between <br/>pastoralists and farmers by nullify resource conflict through the following features:</p>
-      <div className="mx-auto pt-3 grid grid-cols-2 gap-6 mx-auto w-fit" >
+      <h2 className='text-3xl lg:text-6xl font-bold text-green-900 px-2 border-green-900 z-10 mt-2 text-center leading-10 pt-16'>Services</h2>
+      <p className="text-base text-left px-4 lg:text-xl py-6 font-poppins font-medium lg:text-center" >Are you a pastoralist or a farmer? Then you are in the right place. <br/> We aim to bring you a digital platform that promotes the peaceful coexistence between <br/>pastoralists and farmers by nullify resource conflict through the following features:</p>
+      <div className=" mx-auto pt-3 grid grid-cols-1 lg:grid-cols-2 gap-6 mx-auto w-fit" >
             <Card iconPath={"real-time-pasture-updates-icon.svg"} title="Real Time Pasture Updates">The app provides real-time updates on pasture availability by integrating data from satellite imagery and users can view interactive maps showing current pasture conditions. These Real-time updates enable users to make informed decisions regarding livestock grazing locations, rotational grazing practices, and sustainable land management, promoting optimal resource use and environmental conservation.</Card> 
           
             <Card iconPath={"weather-forecast-icon.svg"} title="Weather Forecasts">
