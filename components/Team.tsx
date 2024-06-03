@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import ProfileCard from "@/components/ProfileCard";
-
+import Partners from "./Partners";
 interface Props{
     tagId: string
     footerId: string
@@ -73,7 +73,7 @@ const Team = ({tagId,footerId}:Props) => {
           name={"Lynn Nyanduko"}
         />
       </div>
-
+      <Partners />
       <Footer tagId={footerId} />
     </div>
   );
