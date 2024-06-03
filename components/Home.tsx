@@ -67,9 +67,9 @@ const HomeSection = ({ tagId }: Props) => {
                                         </DialogFooter>
                                     </DialogContent>
                                 </Dialog>
-                                <button className="text-white text-xl font-poppins transition duration-500 bg-transparent p-4 ml-0 mx-4 border-2 border-[#224103] rounded-full w-[200px] h-[65px] flex justify-around hover:text-[#47F969] hover:border-[#47F969]">
+                                {/* <button className="text-white text-xl font-poppins transition duration-500 bg-transparent p-4 ml-0 mx-4 border-2 border-[#224103] rounded-full w-[200px] h-[65px] flex justify-around hover:text-[#47F969] hover:border-[#47F969]">
                                     Learn More <Info className="transition ease-in delay-250 " />{" "}
-                                </button>
+                                </button> */}
                             </div>
                         </div>
                     </div>
