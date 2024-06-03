@@ -1,27 +1,30 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 interface Props {
-  tagId: string
+  tagId: string;
 }
 
-function Footer({tagId}:Props) {
+function Footer({ tagId }: Props) {
   return (
-    <footer className="bg-green-950 text-green-200 w-screen h-fit py-2"id={tagId}>
+    <footer
+      className="bg-green-950 text-green-200 w-screen h-fit lg:py-5"
+      id={tagId}
+    >
       <div className="flex flex-col mx-auto md:mx-0 lg:mx-0 md:flex-row justify-around items-start md:items-center w-full h-fit">
         <div className="flex items-center md:mb-0">
-          <div className="absolute left-[2%] bottom-[1%] w-32 h-32 mr-3 bg-white rounded-full border-[#D6F9C6] border-8 invisible md:invisible lg:visible" >
-            <Image 
-              src="/Footerlogo.png" 
+          <div className="absolute left-[2%] bottom-[1%] w-32 h-32 mr-3 bg-white rounded-full border-[#D6F9C6] border-8 invisible md:invisible lg:visible">
+            <Image
+              src="/Footerlogo.png"
               alt="Logo"
-            //   layout="fill"
+              //   layout="fill"
               width={300}
               height={300}
               objectFit="contain"
               className="invisible md:invisible lg:visible rounded-full self-center pt-2 pl-2"
             />
           </div>
-          <div className='ml-20 mb-4 md:mb-0 lg:mb-0'>
+          <div className="ml-20 mb-4 md:mb-0 lg:mb-0">
             <h3 className="text-xl font-bold text-white">GeoPasture</h3>
             <p className="text-sm">Maamuzi sahihi, ushirikiano wa kudumu</p>
           </div>
@@ -38,7 +41,7 @@ function Footer({tagId}:Props) {
         </div>
         <div className="ml-20 md:ml-0 lg:ml-0 mb-4 md:mb-0">
           <h3 className="text-lg font-bold">Get in touch</h3>
-          <p className="text-sm">email@jhubafrica.com</p>
+          <p className="text-sm">info.jhub@jkuat.ac.ke</p>
           {/*hotline*/}
           <p className="text-sm">+1(238) 468-150-231</p>
         </div>
@@ -49,13 +52,12 @@ function Footer({tagId}:Props) {
 
 export default Footer;
 
-
 // import React from 'react';
 // import Image from 'next/image';
 
 // function Footer() {
 //   return (
-//     <div className="bg-green-950 flex justify-around flex-wrap">    
+//     <div className="bg-green-950 flex justify-around flex-wrap">
 //       <div className="w-full  mb-4 flex justify-around flex-wrap">
 //         <h3 className="text-3xl font-bold text-white ">BOMALINK</h3>
 //         <p className="text-sm text-green-200 flex flex-wrap">Maamuzi sahihi, ushirikiano wa kudumu</p>
@@ -94,7 +96,7 @@ export default Footer;
 
 // function Footer() {
 //   return (
-//     <div>    
+//     <div>
 //           <footer>
 //             <div className="footer-content"/>
 //             <div className="company-info">
@@ -102,12 +104,12 @@ export default Footer;
 //                 <p>Maamuzi sahihi, ushirikiano wa kudumu</p>
 //             </div>
 //         <div className="logo">
-//             <Image 
-//              src="/logo-with-name.png" 
+//             <Image
+//              src="/logo-with-name.png"
 //              width={900}
 //              height={900}
-//              alt="Logo" 
-//              className="logo"            
+//              alt="Logo"
+//              className="logo"
 //              />
 //         </div>
 //         <div>
@@ -132,4 +134,3 @@ export default Footer;
 // }
 
 // export default Footer
-

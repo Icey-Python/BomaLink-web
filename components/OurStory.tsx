@@ -27,8 +27,8 @@ const OurStory = ({tagId}:Props) => {
     <Film className="text-[#224103] invisible lg:visible absolute right-10 top-[35%]" size={50}/>
     <Film className="text-[#224103]/10 absolute top-1/2 left-1/2 z-0" size={100}/>
     <Film className="text-[#224103]/5  absolute bottom-10 left-20 z-0" size={65}/>
-    <span className="bg-[#224103] text-sm lg:text-2xl text-white font-bold p-2 rounded-3xl mt-8">Our story</span>
-    <p className="text-sm lg:text-xl h-fit p-2 z-20">
+    {/* <span className="bg-[#224103] text-sm lg:text-2xl text-white font-bold p-2 rounded-3xl mt-8">Our story</span> */}
+    <p className="text-sm lg:text-xl h-fit p-2 mt-20 z-20">
     We aim to develop a mobile application to facilitate the peaceful coexistence of Kenyan pastoralists and crop farmers by addressing resource conflicts. The app will provide real-time updates on pasture availability, weather forecasts, and GPS-enabled tracking of animals, empowering pastoralists to make informed decisions. By fostering dialogue and providing vital decision-making support, the application seeks to enhance mutual understanding and collaboration between these communities, ensuring sustainable management of shared resources.
     </p>
 
