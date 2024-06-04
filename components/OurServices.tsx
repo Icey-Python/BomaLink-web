@@ -54,10 +54,13 @@ const OurServices = ({ tagId }: Props) => {
           behavior.{" "}
         </Card>
 
-        <Card iconPath={"marketing-platform.svg"} title="Market Platform">
-          Our app includes a user-friendly marketplace where farmers can list
-          sell their farm produce, while pastoralists can sell livestock such as
-          cattle, sheep, goats, and more.{" "}
+        <Card iconPath={"geoFencing.png"} title="Geofencing">
+          Our app empowers both farmers and pastoralists. Farmers can create
+          virtual fences to receive alerts if cattle enter their land, ensuring
+          crop protection and peace of mind. Pastoralists can view designated
+          farm boundaries to plan grazing routes that avoid conflict and promote
+          responsible land use, fostering a more harmonious relationship between
+          both communities.{" "}
         </Card>
       </div>
     </section>
