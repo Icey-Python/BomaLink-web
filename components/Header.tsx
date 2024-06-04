@@ -53,13 +53,13 @@ const Header = () => {
       </div>
       <div className='lg:hidden pr-4' onClick={openDropDown}><Menu /></div>
       {isOpen && (
-        <div className="absolute top-[70px] backdrop-blur-2xl bg-black/50 right-0 bg-transparent  shadow shadow-[#021500]-500/40 w-40 font-bold border-2 border-r-0 border-t-0">
-          <ul>
-            <li><Navlink label="HOME" path="#Home" ></Navlink></li>
-            <li><Navlink label="OUR STORY" path="#story"></Navlink></li>
-            <li><Navlink label="SERVICES" path="#service"></Navlink></li>
-            <li><Navlink label="THE TEAM" path="#team"></Navlink></li>
-            <li><button className="font-poppins transition duration-500 bg-transparent p-1 m-2 border-2 border-[#224103] h-fit rounded-full text-white hover:text-[#021500] hover:bg-[#47f969]">Get App</button></li>
+        <div className="absolute top-[100%] backdrop-blur-2xl glasss rounded-bl-2xl bg-black/70 right-0 w-[50%] h-fit space-y-4 shadow shadow-[#021500]-500/40 font-bold ">
+          <ul className='h-fit'>
+            <li className='py-4'><Navlink label="HOME" path="#Home" ></Navlink></li>
+            <li className='py-4'><Navlink label="OUR STORY" path="#story"></Navlink></li>
+            <li className='py-4'><Navlink label="SERVICES" path="#service"></Navlink></li>
+            <li className='py-4'><Navlink label="THE TEAM" path="#team"></Navlink></li>
+            <li className='p-4'><button className="font-poppins transition duration-500 bg-transparent p-1 m-2 border-2 border-[#224103] h-fit rounded-full text-white hover:text-[#021500] hover:bg-[#47f969]">Get App</button></li>
           </ul>
         </div>
       )}
