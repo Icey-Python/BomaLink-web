@@ -45,7 +45,7 @@ const HomeSection = ({ tagId }: Props) => {
                                 between Kenyan pastoralists and agriculturalists <br /> by
                                 creating a digital platform that addresses resource conflict.
                             </p>
-                            <div className="flex space-y-2 items-center flex-col lg:flex-row">
+                            <div className="flex space-y-2 items-start flex-col lg:flex-row">
                                 <Dialog>
                                     <DialogTrigger asChild>
                                         <button className="text-white text-xl font-poppins  bg-[#021500] bg-opacity-60 p-4 ml-0 mx-4 border-2 border-[#224103] rounded-full w-[200px] h-[65px] transition duration-500 hover:text-[#021500] hover:bg-[#47f969] flex justify-around hover:border-[#47F969] hover:font-bold">
@@ -67,9 +67,6 @@ const HomeSection = ({ tagId }: Props) => {
                                         </DialogFooter>
                                     </DialogContent>
                                 </Dialog>
-                                {/* <button className="text-white text-xl font-poppins transition duration-500 bg-transparent p-4 ml-0 mx-4 border-2 border-[#224103] rounded-full w-[200px] h-[65px] flex justify-around hover:text-[#47F969] hover:border-[#47F969]">
-                                    Learn More <Info className="transition ease-in delay-250 " />{" "}
-                                </button> */}
                             </div>
                         </div>
                     </div>
