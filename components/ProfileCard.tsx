@@ -1,17 +1,17 @@
 import Image from "next/image";
 import React from "react";
+import { LinkIcon } from "lucide-react";
 declare namespace JSX {
   interface Props {
     path: string;
     position: string;
     linkedIn: string;
     name: string;
-    skills: Array<string>;
   }
 }
-const ProfileCard = ({ path, position, linkedIn, name, skills }: JSX.Props) => {
+const ProfileCard = ({ path, position, linkedIn, name }: JSX.Props) => {
   return (
-    <div className="bg-white relative m-2 p-3 rounded-3xl shadow-lg overflow-hidden flex flex-col   max-w-fit">
+    <div className="bg-white relative m-2 p-3 rounded-3xl shadow-lg overflow-hidden flex flex-col   max-w-fit hover:bg-[#238636]/70">
       <div className="flex ">
         <div>
           <Image
@@ -23,34 +23,27 @@ const ProfileCard = ({ path, position, linkedIn, name, skills }: JSX.Props) => {
           />
         </div>
         <div className="ml-5 flex flex-col justify-center">
-          <h2 className="text-base lg:text-xl font-bold mb-1">{name}</h2>
-          <div className="flex space-x-2 mb-2">
-            <span className="bg-green-100 p-2 rounded-full text-xs lg:text-sm">
-              {skills[0]}
-            </span>
-            <span className="bg-green-100 p-2 rounded-full text-xs lg:text-sm">
-              {skills[1]}
-            </span>
-          </div>
-          <div className="flex flex-row items-center mb-2 ">
+          <h2 className="text-base lg:text-xl font-bold mb-1">{name}</h2> 
+          <div className="flex flex-col space-y-2 tems-start mb-2 ">
             <span className="text-xs lg:text-base">{position}</span>
-            <span className="ml-5 hover:underline">
+            <span className="flex space-x-1 group underline-offset-4 decoration-2 hover:underline">
               <a
                 href={linkedIn}
-                className="text-blue-500 text-xs lg:text-sm ml-1 font-bold lg:text-base"
+                className="text-blue-500 text-xs font-bold lg:text-base"
               >
                 LinkedIn
               </a>
+              <LinkIcon size={15} className="text-xs invisible group-hover:visible"/>
             </span>
           </div>
           <div className="flex space-x-2">
             <Image
               src="/icons/school-icon.svg"
               alt="school"
-              width={30}
-              height={30}
+              width={20}
+              height={20}
             />
-            <p className="text-xs lg:text-sm  ml-0">
+            <p className="text-xs lg:text-xs  ml-0">
               Jomo Kenyatta University of Agriculture and Technology
             </p>
           </div>

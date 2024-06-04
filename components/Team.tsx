@@ -25,12 +25,17 @@ const Team = ({tagId,footerId}:Props) => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-fit mx-auto mb-4">
         <ProfileCard
+          path={"/profile/Lawrence Nderu.jpeg"}
+          position={"Project PI"}
+          linkedIn={"https://www.linkedin.com/in/moses-odeny-19bb56292"}
+          name={"Dr. Lawrence Nderu PHD"}
+        />
+        <ProfileCard
           path={"/profile/Faith.jpeg"}
           position={"Project Manager"}
           linkedIn={
             "https://www.linkedin.com/in/faith-mosonik-b07460238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           }
-          skills={["React", "Frontend Developer"]}
           name={"Faith Mosonik"}
         />
         <ProfileCard
@@ -39,21 +44,18 @@ const Team = ({tagId,footerId}:Props) => {
           linkedIn={
             "https://www.linkedin.com/in/sammy-kelly-777079292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           }
-          skills={["React", "Backend Developer"]}
           name={"Sam Kelly"}
         />
         <ProfileCard
           path={"/profile/Joan.jpeg"}
           position={"Scrum Master"}
           linkedIn={"https://www.linkedin.com/in/joan-kinoti-9b26311b1"}
-          skills={["React", "Backend Developer"]}
           name={"Joan Kinoti"}
         />
         <ProfileCard
-          path={"/profile/MM-profile.png"}
+          path={"/profile/MM-profile.jpeg"}
           position={"UI/UX Designer"}
           linkedIn={"https://www.linkedin.com/in/melanie-minayo-6ab167298/"}
-          skills={["UI/UX", "Web Development"]}
           name={"Melanie Minayo"}
         />
         <ProfileCard
@@ -69,7 +71,6 @@ const Team = ({tagId,footerId}:Props) => {
           linkedIn={
             "https://www.linkedin.com/in/lynn-omae-0160b1252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           }
-          skills={["React", "Frontend Developer"]}
           name={"Lynn Nyanduko"}
         />
       </div>
