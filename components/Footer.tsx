@@ -8,7 +8,7 @@ interface Props {
 function Footer({ tagId }: Props) {
   return (
     <footer
-      className="bg-green-950 text-green-200 w-screen h-fit lg:py-5"
+      className="bg-green-950 text-green-200 w-screen h-fit py-5 lg:py-5"
       id={tagId}
     >
       <div className="flex flex-col mx-auto md:mx-0 lg:mx-0 md:flex-row justify-around items-start md:items-center w-full h-fit">
@@ -43,7 +43,7 @@ function Footer({ tagId }: Props) {
           <h3 className="text-lg font-bold">Get in touch</h3>
           <p className="text-sm">info.jhub@jkuat.ac.ke</p>
           {/*hotline*/}
-          <p className="text-sm">+1(238) 468-150-231</p>
+          <p className="text-sm">067-5352711</p>
         </div>
       </div>
     </footer>
