@@ -74,7 +74,6 @@ const Team = ({tagId,footerId}:Props) => {
           path={"/profile/Moses.jpeg"}
           position={"Database Manager"}
           linkedIn={"https://www.linkedin.com/in/moses-odeny-19bb56292"}
-          skills={["React", "Database modelling"]}
           name={"Moses Odeny"}
         />
         </Fade>
