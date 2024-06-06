@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { Facebook, Instagram, Linkedin, X } from "lucide-react";
 
 interface Props {
   tagId: string;
@@ -29,6 +31,23 @@ function Footer({ tagId }: Props) {
             <p className="text-sm">Maamuzi sahihi, ushirikiano wa kudumu</p>
           </div>
         </div>
+        <div className="ml-20 md:ml-0 lg:ml-0 mb-4 md:mb-0">
+          <h3 className="text-lg font-bold text-white">Social Media</h3>
+          <div className="flex space-x-4">
+            <Link href={"https://www.linkedin.com/company/jhubafrica/"}>
+              <Linkedin />
+            </Link>
+            <Link href={"https://x.com/JHUBAfrica"}>
+              <X />
+            </Link>
+            <Link href={"https://www.facebook.com/JHUBAfrica/"}>
+              <Facebook />
+            </Link>
+            <Link href={"https://www.instagram.com/jhubafrica/"}>
+              <Instagram />
+            </Link>
+          </div>
+        </div>
         <div className="ml-20 md:ml-0 lg:ml-0 mb-4 md:mb-0 ">
           <h3 className="text-lg font-bold text-white">Get in touch</h3>
           <p className="text-sm">info.jhub@jkuat.ac.ke</p>
@@ -41,86 +60,3 @@ function Footer({ tagId }: Props) {
 }
 
 export default Footer;
-
-// import React from 'react';
-// import Image from 'next/image';
-
-// function Footer() {
-//   return (
-//     <div className="bg-green-950 flex justify-around flex-wrap">
-//       <div className="w-full  mb-4 flex justify-around flex-wrap">
-//         <h3 className="text-3xl font-bold text-white ">BOMALINK</h3>
-//         <p className="text-sm text-green-200 flex flex-wrap">Maamuzi sahihi, ushirikiano wa kudumu</p>
-//       </div>
-//       <div className="flex w-full justify-around fixed bottom-0 left-0 h-24 mb-4">
-//         <Image
-//           src="/logo-with-name.png"
-//           width={100}
-//           height={100}
-//           alt="Logo"
-//           className="fixed bottom-5 left-5"
-//         />
-//       </div>
-//       <div className="w-full text-green-200 text-sm justify-around text-center">
-//         <h3 className="text-xl font-bold">Company</h3>
-//         <p className="text-sm">FAQs</p>
-//         <p className="text-sm">Team</p>
-//       </div>
-//       <div className="w-full text-center mb-4">
-//         <h3 className="text-xl font-bold">Explore</h3>
-//         <p className="text-sm">Services</p>
-//         <p className="text-sm">Related Agencies</p>
-//       </div>
-//       <div className="w-full text-center mb-4">
-//         <h3 className="text-xl font-bold">Get in Touch</h3>
-//         <p className="text-sm">email@jhubafrica.com</p>
-//         <p className="text-sm">+1(238) 468-150-231</p>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Footer;
-// import React from 'react'
-// import Image from 'next/image'
-
-// function Footer() {
-//   return (
-//     <div>
-//           <footer>
-//             <div className="footer-content"/>
-//             <div className="company-info">
-//                 <h3>BomaLink</h3>
-//                 <p>Maamuzi sahihi, ushirikiano wa kudumu</p>
-//             </div>
-//         <div className="logo">
-//             <Image
-//              src="/logo-with-name.png"
-//              width={900}
-//              height={900}
-//              alt="Logo"
-//              className="logo"
-//              />
-//         </div>
-//         <div>
-//             <h3>Company</h3>
-//             <p>FAQs</p>
-//             <p>Team</p>
-//         </div>
-//         <div>
-//             <h3>Explore</h3>
-//             <p>Services</p>
-//             <p>Related Agencies</p>
-//         </div>
-//         <div>
-//             <h3>Get in Touch</h3>
-//             <p> email@jhubafrica.com</p>
-//             <p> +1(238) 468-150-231</p>
-//         </div>
-//     </footer>
-
-//     </div>
-//   )
-// }
-
-// export default Footer
