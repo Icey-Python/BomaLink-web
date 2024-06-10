@@ -30,7 +30,7 @@ const HomeSection = ({ tagId }: Props) => {
           id={tagId}
         >
           {" "}
-          <ParticlesComponent className={"w-1/2"} id={"particles"} />
+          <ParticlesComponent/>
           <div
             className="w-full h-full bg-[#021500] glasss bg-opacity-60 space-y-10 pl-6"
             style={{ backdropFilter: "blur(2px)" }}
