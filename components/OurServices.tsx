@@ -18,7 +18,7 @@ const OurServices = ({ tagId }: Props) => {
         Are you a pastoralist or a farmer? Then you are in the right place.{" "}
         <br /> We aim to bring you a digital platform that promotes the peaceful
         coexistence between <br />
-        pastoralists and farmers by nullify resource conflict through the
+        pastoralists and farmers by nullifying resource conflict through the
         following features:
       </p>
       <div className=" mx-auto pt-3 grid grid-cols-1 lg:grid-cols-2 gap-6 mx-auto w-fit">
@@ -31,19 +31,17 @@ const OurServices = ({ tagId }: Props) => {
           integrating data from satellite imagery and users can view interactive
           enable users to make informed decisions regarding livestock grazing
           locations, rotational grazing practices, and sustainable land
-          maps showing current pasture conditions. These Real-time updates
-          management, promoting optimal resource use and environmental
-          conservation.
+          maps showing current pasture conditions.
           </JackInTheBox>
         </Card>
 
         <Card iconPath={"weather-forecast-icon.svg"} title="Weather Forecasts">
           <JackInTheBox>
-          Weather forecasting functionality in our app will provide users with
+          Weather forecasting provides users with
           accurate and up-to-date weather information for their specific
           geographical locations. Users can access hourly, daily, and weekly
           weather forecasts, including temperature, humidity, precipitation
-          chances, wind speed, and UV index, among other relevant data points.
+          chances, wind speed, among other relevant data points.
           </JackInTheBox>
         </Card>
 
@@ -52,7 +50,7 @@ const OurServices = ({ tagId }: Props) => {
           title="Track Animal Location"
         >
           <JackInTheBox>
-          GPS tracking functionality enables users to monitor and track the
+          GPS tracking enables users to monitor and track the
           movement of their animals in real-time using GPS-enabled devices such
           as smartphones or dedicated GPS trackers attached to animals so as to
           improve grazing efficiency, preventing livestock loss or theft, and
