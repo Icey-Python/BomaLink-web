@@ -30,10 +30,15 @@ const OurStory = ({ tagId }: Props) => {
         speed={15}
         autoFill={true}
       >
-        <ScrollCard path={"/farmer-with-goat.png"} />
-        <ScrollCard path={"/farmer-with-goats.png"} />
+        <ScrollCard path={"/cows-4.jpeg"} />
+        <ScrollCard path={"/cows-2.jpeg"} />
         <ScrollCard path={"/cows.png"} />
-        <ScrollCard path={"/farm.png"} />
+        <ScrollCard path={"/cows-1.jpeg"} />
+        <ScrollCard path={"/cows-3.jpeg"} />
+        <ScrollCard path={"/cows-5.jpeg"} />
+        <ScrollCard path={"/cows-6.jpeg"} />
+        <ScrollCard path={"/cows-7.jpeg"} />
+        <ScrollCard path={"/pastoralist.jpeg"} />
       </Marquee>
       <div className="flex justify-items-center items-top font-bold text-6xl h-1/2 px-20 py-8 z-0 bg-[#021500] relative">
         <p className="text-center mx-auto my-auto lg:my-0 w-fit text-4xl md:text-5xl lg:text-7xl">

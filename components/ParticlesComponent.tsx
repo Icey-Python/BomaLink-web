@@ -31,7 +31,7 @@ const ParticlesComponent = () => {
           //   value: "#00000000",
           // },
         },
-        fpsLimit: 120,
+        fpsLimit: 60,
         interactivity: {
           events: {
             onClick: {
@@ -50,7 +50,7 @@ const ParticlesComponent = () => {
             },
             repulse: {
               distance: 200,
-              duration: 0.4,
+              duration: 0.1,
             },
           },
         },
@@ -61,7 +61,7 @@ const ParticlesComponent = () => {
             value: "#ffffff",
           },
           links: {
-            color: "#00bfff",
+            color: "#ffffff",
             distance: 100,
             enable: true,
             opacity: 1,

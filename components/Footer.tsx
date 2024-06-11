@@ -22,8 +22,7 @@ function Footer({ tagId }: Props) {
               //   layout="fill"
               width={300}
               height={300}
-              objectFit="contain"
-              className="invisible md:invisible lg:visible rounded-full self-center pt-2 pl-2"
+              className="invisible md:invisible lg:visible rounded-full self-center pt-2 pl-2 object-contain"
             />
           </div>
           <div className="ml-20 mb-4 md:mb-0 lg:mb-0">

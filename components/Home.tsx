@@ -13,19 +13,54 @@ import {
 } from "@/components/ui/Dialog";
 import { Button } from "@/components/ui/button";
 import { Slide } from "react-awesome-reveal";
-
+import { useState, useEffect } from "react";
 interface Props {
   tagId: string;
 }
 
+
 const HomeSection = ({ tagId }: Props) => {
+  // Array of image URLs to cycle through
+  const images: string[] = [
+    "url('/newlanding2.jpg')",
+    "url('/cows-1.jpeg')",
+    "url('/cows-2.jpeg')",
+    "url('/cows-3.jpeg')",
+    "url('/cows-4.jpeg')",
+    "url('/cows-5.jpeg')",
+    "url('/cows-6.jpeg')",
+    "url('/cows-7.jpeg')"
+  ];
+
+  const [currentImage, setCurrentImage] = useState<string>(images[0]);
+
+  useEffect(() => {
+    
+    // Function to change the background image
+    const changeImage = () => {
+      setCurrentImage(prevImage => {
+        const currentIndex = images.indexOf(prevImage);
+        const nextIndex = (currentIndex + 1) % images.length;
+        return images[nextIndex];
+      });
+    };
+
+    // Set an interval to change the image every 3 seconds
+    const intervalId = setInterval(changeImage, 5000);
+
+    // Cleanup the interval on component unmount
+    return () => clearInterval(intervalId);
+  }, [images]);
+
   return (
     <>
         <div
           className="w-screen h-[100vh] backdrop-filter backdrop-blur-3xl self-center bg-no-repeat cursor-pointer"
           style={{
-            backgroundImage: `url(${"/newlanding2.jpg"})`,
+            backgroundImage: currentImage,
             backgroundSize: "cover",
+            transition: 'background-image 1s',
+            transitionDelay:'2s'
           }}
           id={tagId}
         >
