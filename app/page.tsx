@@ -7,12 +7,12 @@ import Header from "@/components/Header";
 import { Gallery } from "@/components/Gallery";
 export default function Home() {
   return (
-    <main className="overflow-hidden relative cursor-pointer ">
+    <main className="overflow-hidden relative">
       <Header />
       <HomeSection tagId="Home" />
       <OurStory tagId="story" />
       <OurServices tagId="service" />
-      <Gallery/>
+      <Gallery tagId="Gallery"/>
       <Team tagId="team" footerId="contact" />
     </main>
   );

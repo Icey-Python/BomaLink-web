@@ -9,22 +9,24 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+interface Props{
+tagId: string,
+}
 const images: string[] = [
     "/group-1.jpeg",
     "/group-2.jpeg",
     "/group-3.jpeg",
     "/group-4.jpeg",
-    "/group-5.jpeg",
     "/group-6.jpeg"
 
 ]
-export function Gallery() {
+export function Gallery({tagId}:Props) {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
 
   return (
-    <div className="w-full h-fit px-5 md:px-20 lg:px-20 bg-[#D6F9C6] py-5">
+    <div className="w-full h-fit px-5 md:px-20 lg:px-20 bg-[#D6F9C6] py-5" id={tagId}>
     <h2 className="text-3xl lg:text-6xl font-bold text-green-900 px-2 border-green-900 z-10 mt-2 text-center leading-10 pb-2">
         Gallery
       </h2>
@@ -47,8 +49,8 @@ export function Gallery() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="cursor-pointer" />
+      <CarouselNext className="cursor-pointer"/>
     </Carousel>
     </div>
   )

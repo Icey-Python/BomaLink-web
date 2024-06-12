@@ -47,7 +47,7 @@ const Navlink: React.FC<NavlinkProps> = ({ label, path }) => {
 
   return (
      <Link
-      className={`w-screen lg:w-fit transition-all hover:duration-700 ease-in duration-400 px-3 mx-3 rounded-full hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-white focus:active my-3 ${isActive ? 'active' : ''}`}
+      className={`w-screen lg:w-fit transition-all hover:duration-700 ease-in duration-400 px-3 mx-3 rounded-full cursor-pointer hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-white focus:active my-3 ${isActive ? 'active' : ''}`}
       href={path}
       onClick={handleClick}
     >
