@@ -17,8 +17,9 @@ const images: string[] = [
     "/group-2.jpeg",
     "/group-3.jpeg",
     "/group-4.jpeg",
-    "/group-6.jpeg"
-
+    "/group-6.jpeg",
+    "/group-8.jpg",
+    "/group-9.jpg"
 ]
 export function Gallery({tagId}:Props) {
   const plugin = React.useRef(
@@ -30,6 +31,9 @@ export function Gallery({tagId}:Props) {
     <h2 className="text-3xl lg:text-6xl font-bold text-green-900 px-2 border-green-900 z-10 mt-2 text-center leading-10 pb-2">
         Gallery
       </h2>
+    <p className="text-sm lg:text-xl h-fit py-2 px-5 md:px-20 lg:px-20 font-poppins">
+    Browse through our collection of photographs capturing our group in lively discussions, asking questions, and learning from the invaluable knowledge and experiences shared by the pastoralists. These images highlight the collaborative spirit and the exchange of insights that are at the heart of Geopasture&apos;s mission. {/*&apos; replaces the ' <apostrophe>*/}
+    </p>
     <Carousel
       plugins={[plugin.current]}
       className="w-full md:w-3/4 lg:w-3/4 h-full mx-auto"

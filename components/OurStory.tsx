@@ -39,6 +39,11 @@ const OurStory = ({ tagId }: Props) => {
         <ScrollCard path={"/cows-5.jpeg"} />
         <ScrollCard path={"/cows-6.jpeg"} />
         <ScrollCard path={"/cows-7.jpeg"} />
+        <ScrollCard path={"/cows-8.jpg"} />
+        <ScrollCard path={"/cows-9.jpg"} />
+        <ScrollCard path={"/cows-10.jpg"} />
+        <ScrollCard path={"/cows-11.jpg"} />
+        <ScrollCard path={"/cows-12.jpg"} />
         <ScrollCard path={"/pastoralist.jpeg"} />
       </Marquee>
       <div className="flex justify-items-center items-top font-bold text-6xl h-1/2 px-20 py-8 z-0 bg-[#021500] relative">
@@ -68,7 +73,7 @@ const OurStory = ({ tagId }: Props) => {
           size={65}
         />
         {/* <span className="bg-[#224103] text-sm lg:text-2xl text-white font-bold p-2 rounded-3xl mt-8">Our story</span> */}
-        <p className="text-sm lg:text-xl h-fit p-2 mt-2 lg:mt-20 z-20">
+        <p className="text-sm lg:text-xl h-fit py-2 px-5 md:px-20 lg:px-20 mt-2 lg:mt-20 z-20">
           Our mobile application, GeoPasture, is designed to promote peaceful
           coexistence between pastoralists and crop farmers by addressing
           resource conflicts. GeoPasture offers real-time updates on pasture

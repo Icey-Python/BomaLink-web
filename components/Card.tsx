@@ -9,8 +9,8 @@ import { JackInTheBox } from "react-awesome-reveal";
 
 const Card = ({ iconPath, title, children }: Props) => {
   return (
-    <div className="transition-all duration-700 delay-50 cursor-pointer ease-out bg-transparent h-fit  p-5 mx-2 text-black shadow-2xl z-40 rounded-xl hover:bg-[#238636] hover:bg-opacity-70 group max-w-xl hover:flex min-w-[90%] lg:min-w-[576px] min-h-[330px]">
-      <div className="group-hover:hidden">
+    <div className="transition-all duration-700 delay-50 cursor-pointer ease-out bg-transparent h-fit  p-5 mx-2 text-black shadow-2xl z-40 rounded-xl md:hover:bg-[#238636] lg:hover:bg-[#238636] hover:bg-opacity-70 group max-w-xl hover:flex min-w-[90%] lg:min-w-[576px] min-h-[330px]">
+      <div className="block md:group-hover:hidden lg:group-hover:hidden">
         <Image
           className="mx-auto group-hover:scale-75  group-hover:z-0"
           src={`/icons/${iconPath}`}
@@ -24,7 +24,7 @@ const Card = ({ iconPath, title, children }: Props) => {
         />
       </div>
       <div className="">
-        <div className="w-full h-2 flex justify-between group-hover:hidden">
+        <div className="w-full h-2 hidden md:flex lg:flex justify-between lg:group-hover:hidden">
           {/*horizontal lines*/}
           <div className="w-1/3 h-1 bg-black rounded-xl "></div>
           <div className="w-1/3 h-1 bg-black rounded-xl"></div>
@@ -34,7 +34,7 @@ const Card = ({ iconPath, title, children }: Props) => {
             {title}
           </p>
     
-            <p className="text-sm lg:text-xl textfont-medium transition ease-out delay-50 hidden group-hover:block">
+            <p className="text-sm lg:text-xl textfont-medium transition ease-out delay-50 block md:hidden lg:hidden lg:group-hover:block">
               {children}
             </p>
           

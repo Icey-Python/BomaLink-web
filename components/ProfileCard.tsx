@@ -29,6 +29,7 @@ const ProfileCard = ({ path, position, linkedIn, name }: JSX.Props) => {
             <span className="flex space-x-1 group underline-offset-4 decoration-2 hover:underline">
               <a
                 href={linkedIn}
+                target="_blank"
                 className="text-blue-500 text-xs font-bold lg:text-base cursor-pointer"
               >
                 LinkedIn
