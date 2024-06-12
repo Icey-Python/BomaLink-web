@@ -55,7 +55,7 @@ const HomeSection = ({ tagId }: Props) => {
   return (
     <>
         <div
-          className="w-screen h-[100vh] backdrop-filter backdrop-blur-3xl self-center bg-no-repeat cursor-pointer"
+          className="w-screen h-[100vh] backdrop-filter backdrop-blur-3xl self-center bg-no-repeat"
           style={{
             backgroundImage: currentImage,
             backgroundSize: "cover",
@@ -64,16 +64,15 @@ const HomeSection = ({ tagId }: Props) => {
           }}
           id={tagId}
         >
-          {" "}
           <ParticlesComponent/>
           <div
             className="w-full h-full bg-[#021500] glasss bg-opacity-60 space-y-10 pl-6"
             style={{ backdropFilter: "blur(2px)" }}
           >
             <div className="flex h-full justify-around items-center">
-                <Slide>
+                <Slide triggerOnce={true}>
               <div className="space-y-6">
-                <p className="text-6xl font-mogra lg:text-[190px]  text-white drop-shadow-md leading-none">
+                <p className="text-6xl font-mogra md:text-[3rem] lg:text-[8rem]  text-white drop-shadow-md leading-none">
                   GeoPasture
                 </p>
                 <div className="space-y-8">
@@ -90,37 +89,37 @@ const HomeSection = ({ tagId }: Props) => {
                     <Dialog>
                       <DialogTrigger asChild>
                         <button className="text-white text-xl font-poppins  bg-[#021500] bg-opacity-60 p-4 ml-0 mx-4 border-2 border-[#224103] rounded-full w-[200px] h-[65px] transition duration-500 hover:text-[#021500] hover:bg-[#47f969] flex justify-around hover:border-[#47F969] hover:font-bold">
-                          Get App{" "}
+                          Get App
                           <ArrowDownToLine className="transition ease-in delay-250 " />
                         </button>
                       </DialogTrigger>
                       <DialogContent className="sm:max-w-md text-white">
-                        <DialogHeader>
-                          <DialogTitle className="font-bold hover:text-[#47f969] text-2xl">
-                            Get App
-                          </DialogTitle>
-                        </DialogHeader>
-                        <DialogDescription className="text-2xl hover:text-[#47f969]">
-                          GeoPasture App Coming Soon!
-                        </DialogDescription>
-                        <DialogFooter className="sm:justify-center">
-                          <DialogClose asChild>
-                            <Button
-                              type="button"
-                              className="bg-white hover:bg-[#47f969] text-black"
-                              variant="secondary"
-                            >
-                              Close
-                            </Button>
-                          </DialogClose>
-                        </DialogFooter>
-                      </DialogContent>
+            <DialogHeader>
+              <DialogTitle className="font-bold hover:text-[#47f969] text-2xl">
+                Get App
+              </DialogTitle>
+            </DialogHeader>
+            <DialogDescription className="text-2xl hover:text-[#47f969]">
+              GeoPasture App Coming Soon!
+            </DialogDescription>
+            <DialogFooter className="sm:justify-center">
+              <DialogClose asChild>
+                <Button
+                  type="button"
+                  className="bg-white hover:bg-[#47f969] text-black"
+                  variant="secondary"
+                >
+                  Close
+                </Button>
+              </DialogClose>
+            </DialogFooter>
+          </DialogContent>
                     </Dialog>
                   </div>
                 </div>
               </div>
             </Slide>
-            <Slide direction="right">
+            <Slide direction="right" triggerOnce={true}>
               <div className="hidden lg:flex justify-items-center items-center z-20">
                 <Image
                   src="/Phone.png"

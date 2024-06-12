@@ -26,6 +26,7 @@ const OurStory = ({ tagId }: Props) => {
           width: "100%",
           height: "fit-content",
           zIndex: "10",
+          cursor:"pointer"
         }}
         speed={15}
         autoFill={true}

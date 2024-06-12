@@ -32,13 +32,14 @@ const Header = () => {
         <Navlink label="ABOUT US" path="#story"></Navlink>
         <Navlink label="SERVICES" path="#service"></Navlink>
         <Navlink label="TEAM" path="#team"></Navlink>
+        <Navlink label="GALLERY" path="#Gallery"></Navlink>
         <Dialog>
           <DialogTrigger asChild>
-            <button className="font-poppins transition duration-500 bg-transparent p-2 border-2 border-[#224103] h-fit rounded-full text-white hover:text-[#021500] hover:bg-[#47f969]">
+            <button className="font-poppins transition duration-500 bg-transparent p-2 border-2 border-[#224103] h-fit rounded-full text-white hover:text-[#021500] hover:bg-[#47f969 cursor-pointer]">
               <ArrowDownToLine />
             </button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-md text-white">
+          <DialogContent className="sm:max-w-md text-white backdrop-blur-3xl">
             <DialogHeader>
               <DialogTitle className="font-bold hover:text-[#47f969] text-2xl">
                 Get App
@@ -51,7 +52,7 @@ const Header = () => {
               <DialogClose asChild>
                 <Button
                   type="button"
-                  className="bg-white hover:bg-[#47f969] text-black"
+                  className="bg-white hover:bg-[#47f969] text-black cursor-pointer"
                   variant="secondary"
                 >
                   Close
@@ -61,6 +62,7 @@ const Header = () => {
           </DialogContent>
         </Dialog>
       </div>
+
       <div className="md:hidden lg:hidden pr-4" onClick={openDropDown}>
         <Menu />
       </div>
@@ -79,15 +81,17 @@ const Header = () => {
             <li className="py-4">
               <Navlink label="THE TEAM" path="#team"></Navlink>
             </li>
+            <li className="py-4">
+              <Navlink label="Gallery" path="#gallery"></Navlink>
+            </li>
             <li className="p-4">
-              {" "}
               <Dialog>
                 <DialogTrigger asChild>
                   <button className="font-poppins transition duration-500 bg-transparent p-4  border-2 border-[#224103] h-fit rounded-full text-white hover:text-[#021500] hover:bg-[#47f969] py-2 ">
-                    Get App{" "}
+                    Get App
                   </button>
                 </DialogTrigger>
-                <DialogContent className="w-[80%] lg:max-w-md text-white rounded-xl">
+                <DialogContent className="w-[80%] lg:max-w-md text-white rounded-xl backdrop-blur-3xl">
                   <DialogHeader>
                     <DialogTitle className="font-bold hover:text-[#47f969] text-2xl">
                       Get App
