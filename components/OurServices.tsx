@@ -22,7 +22,7 @@ const OurServices = ({ tagId }: Props) => {
       <h2 className="text-3xl lg:text-6xl font-bold text-green-900 px-2 border-green-900 z-10 mt-2 text-center leading-10 pt-16">
         Services
       </h2>
-      <p className="text-sm text-left px-10 font-normal lg:px-4 lg:text-xl py-6 font-poppins lg:font-medium lg:text-center">
+      <p className="text-sm px-5 py-2 md:px-40 lg:px-40 lg:text-xl font-poppins">
         Are you a pastoralist or a farmer? Then you are in the right place.
         <br /> We aim to bring you a digital platform that promotes the peaceful
         coexistence between <br />

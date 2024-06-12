@@ -29,7 +29,12 @@ const HomeSection = ({ tagId }: Props) => {
     "url('/cows-4.jpeg')",
     "url('/cows-5.jpeg')",
     "url('/cows-6.jpeg')",
-    "url('/cows-7.jpeg')"
+    "url('/cows-7.jpeg')",
+    "url('/cows-8.jpg')",
+    "url('/cows-9.jpg')",
+    "url('/cows-10.jpg')",
+    "url('/cows-11.jpg')",
+    "url('/cows-12.jpg')" 
   ];
 
   const [currentImage, setCurrentImage] = useState<string>(images[0]);
