@@ -31,7 +31,7 @@ export function Gallery({tagId}:Props) {
     <h2 className="text-3xl lg:text-6xl font-bold text-green-900 px-2 border-green-900 z-10 mt-2 text-center leading-10 pb-2">
         Gallery
       </h2>
-    <p className="px-5 py-2 md:px-20 lg:px-20 text-xl font-poppins">
+    <p className="text-sm lg:text-xl h-fit py-2 px-5 md:px-20 lg:px-20 font-poppins">
     Browse through our collection of photographs capturing our group in lively discussions, asking questions, and learning from the invaluable knowledge and experiences shared by the pastoralists. These images highlight the collaborative spirit and the exchange of insights that are at the heart of Geopasture's mission.
     </p>
     <Carousel
