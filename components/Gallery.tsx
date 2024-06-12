@@ -32,7 +32,7 @@ export function Gallery({tagId}:Props) {
         Gallery
       </h2>
     <p className="text-sm lg:text-xl h-fit py-2 px-5 md:px-20 lg:px-20 font-poppins">
-    Browse through our collection of photographs capturing our group in lively discussions, asking questions, and learning from the invaluable knowledge and experiences shared by the pastoralists. These images highlight the collaborative spirit and the exchange of insights that are at the heart of Geopasture's mission.
+    Browse through our collection of photographs capturing our group in lively discussions, asking questions, and learning from the invaluable knowledge and experiences shared by the pastoralists. These images highlight the collaborative spirit and the exchange of insights that are at the heart of Geopasture&apos;s mission. {/*&apos; replaces the ' <apostrophe>*/}
     </p>
     <Carousel
       plugins={[plugin.current]}
