@@ -30,7 +30,7 @@ const Team = ({ tagId, footerId }: Props) => {
             <ProfileCard
               path={"/profile/Lawrence Nderu.jpeg"}
               position={"Project PI"}
-              linkedIn={"https://www.linkedin.com/in/moses-odeny-19bb56292"}
+              linkedIn={"https://www.linkedin.com/in/dr-lawrence-nderu/"}
               name={"Dr. Lawrence Nderu PHD"}
             />
           </Fade>
