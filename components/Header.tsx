@@ -15,6 +15,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/Dialog";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -25,14 +26,16 @@ const Header = () => {
 
   return (
     <div className="flex justify-between items-center text-white backdrop-blur-2xl w-screen h-16 fixed top-0 left-0 z-40 bg-[#021500] bg-opacity-20 drop-shadow-2xl shadow shadow-[#021500]-500/40">
-      <Image src="/Logo.png" alt="logo" width={80} height={80}></Image>
+      <Link href="#Home">
+        <Image src="/Logo.png" alt="logo" width={80} height={80}></Image>
+      </Link>
 
       <div className="hidden lg:flex visible bg-transparent pr-10 text-white font-bold my-auto w-fit items-center">
         <Navlink label="HOME" path="#Home"></Navlink>
         <Navlink label="ABOUT US" path="#story"></Navlink>
         <Navlink label="SERVICES" path="#service"></Navlink>
-        <Navlink label="TEAM" path="#team"></Navlink>
         <Navlink label="GALLERY" path="#Gallery"></Navlink>
+        <Navlink label="TEAM" path="#team"></Navlink>
         <Dialog>
           <DialogTrigger asChild>
             <button className="font-poppins transition duration-500 bg-transparent p-2 border-2 border-[#224103] h-fit rounded-full text-white hover:text-[#021500] hover:bg-[#47f969 cursor-pointer]">
@@ -79,11 +82,12 @@ const Header = () => {
               <Navlink label="SERVICES" path="#service"></Navlink>
             </li>
             <li className="py-4">
-              <Navlink label="THE TEAM" path="#team"></Navlink>
-            </li>
-            <li className="py-4">
               <Navlink label="Gallery" path="#gallery"></Navlink>
             </li>
+            <li className="py-4">
+              <Navlink label="TEAM" path="#team"></Navlink>
+            </li>
+
             <li className="p-4">
               <Dialog>
                 <DialogTrigger asChild>
