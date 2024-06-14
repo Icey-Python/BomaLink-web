@@ -23,13 +23,11 @@ const HomeSection = ({ tagId }: Props) => {
   // Array of image URLs to cycle through
   const images: string[] = [
     "url('/newlanding2.jpg')",
-    "url('/cows-1.jpeg')",
     "url('/cows-2.jpeg')",
     "url('/cows-3.jpeg')",
     "url('/cows-4.jpeg')",
     "url('/cows-5.jpeg')",
     "url('/cows-6.jpeg')",
-    "url('/cows-7.jpeg')",
     "url('/cows-8.jpg')",
     "url('/cows-9.jpg')",
     "url('/cows-10.jpg')",
@@ -55,7 +53,7 @@ const HomeSection = ({ tagId }: Props) => {
 
     // Cleanup the interval on component unmount
     return () => clearInterval(intervalId);
-  }, [images]);
+  }, []);
 
   return (
     <>
@@ -77,23 +75,23 @@ const HomeSection = ({ tagId }: Props) => {
             <div className="flex h-full justify-around items-center">
                 <Slide triggerOnce={true}>
               <div className="space-y-6">
-                <p className="text-6xl font-mogra md:text-[3rem] lg:text-[8rem]  text-white drop-shadow-md leading-none">
+                <p className="text-6xl font-mogra md:text-[3rem] lg:text-[12rem]  text-white drop-shadow-md leading-none">
                   GeoPasture
                 </p>
                 <div className="space-y-8">
-                  <p className="text-xl font-monteserrat lg:text-4xl text-[#D6F9C6]  drop-shadow-md leading-none font-extralight">
+                  <p className="text-xl font-monteserrat lg:text-6xl text-[#D6F9C6]  drop-shadow-md leading-none font-extralight">
                     Maamuzi sahihi, ushirikiano wa kudumu
                   </p>
-                  <p className="text-xl w-full text-white font-poppins lg:text-2xl ">
+                  <p className="text-xl w-full text-white font-poppins lg:text-4xl ">
                     A mobile app aimed at fostering peaceful coexistence <br />{" "}
                     between Kenyan pastoralists and agriculturalists <br /> by
                     creating a digital platform that addresses resource
                     conflict.
                   </p>
-                  <div className="flex space-y-2 items-start flex-col lg:flex-row">
+                  <div className="flex space-y-2  flex-col lg:flex-row w-full">
                     <Dialog>
                       <DialogTrigger asChild>
-                        <button className="text-white text-xl font-poppins  bg-[#021500] bg-opacity-60 p-4 ml-0 mx-4 border-2 border-[#224103] rounded-full w-[200px] h-[65px] transition duration-500 hover:text-[#021500] hover:bg-[#47f969] flex justify-around hover:border-[#47F969] hover:font-bold">
+                        <button className="text-white text-xl font-poppins  bg-[#021500] bg-opacity-60 p-4 ml-0 mx-auto border-2 border-[#224103] rounded-full w-[200px] h-[65px] transition duration-500 hover:text-[#021500] hover:bg-[#47f969] flex justify-around hover:border-[#47F969] hover:font-bold ">
                           Get App
                           <ArrowDownToLine className="transition ease-in delay-250 " />
                         </button>
@@ -124,7 +122,7 @@ const HomeSection = ({ tagId }: Props) => {
                 </div>
               </div>
             </Slide>
-            <Slide direction="right" triggerOnce={true}>
+            {/* <Slide direction="right" triggerOnce={true}>
               <div className="hidden lg:flex justify-items-center items-center z-20">
                 <Image
                   src="/Phone.png"
@@ -139,7 +137,7 @@ const HomeSection = ({ tagId }: Props) => {
                 >
                 </Image>
               </div>
-            </Slide>
+            </Slide> */}
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ const OurStory = ({ tagId }: Props) => {
           width: "100%",
           height: "fit-content",
           zIndex: "10",
-          cursor:"pointer"
+          cursor: "pointer",
         }}
         speed={15}
         autoFill={true}
@@ -73,7 +73,7 @@ const OurStory = ({ tagId }: Props) => {
           size={65}
         />
         {/* <span className="bg-[#224103] text-sm lg:text-2xl text-white font-bold p-2 rounded-3xl mt-8">Our story</span> */}
-        <p className="text-sm lg:text-xl h-fit py-2 px-5 md:px-20 lg:px-20 mt-2 lg:mt-20 z-20">
+        <p className="text-sm h-fit  mt-2 px-5 md:px-20 lg:px-20 lg:mt-20 lg:text-xl z-20">
           Our mobile application, GeoPasture, is designed to promote peaceful
           coexistence between pastoralists and crop farmers by addressing
           resource conflicts. GeoPasture offers real-time updates on pasture
