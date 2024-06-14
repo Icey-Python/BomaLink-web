@@ -32,13 +32,13 @@ const HomeSection = ({ tagId }: Props) => {
     "url('/cows-9.jpg')",
     "url('/cows-10.jpg')",
     "url('/cows-11.jpg')",
-    "url('/cows-12.jpg')" 
+    "url('/cows-12.jpg')"
   ];
 
   const [currentImage, setCurrentImage] = useState<string>(images[0]);
 
   useEffect(() => {
-    
+
     // Function to change the background image
     const changeImage = () => {
       setCurrentImage(prevImage => {
@@ -57,23 +57,23 @@ const HomeSection = ({ tagId }: Props) => {
 
   return (
     <>
+      <div
+        className="w-screen h-[100vh] backdrop-filter backdrop-blur-3xl self-center bg-no-repeat"
+        style={{
+          backgroundImage: currentImage,
+          backgroundSize: "cover",
+          transition: 'background-image 1s',
+          transitionDelay: '2s'
+        }}
+        id={tagId}
+      >
+        {/*<ParticlesComponent/>*/}
         <div
-          className="w-screen h-[100vh] backdrop-filter backdrop-blur-3xl self-center bg-no-repeat"
-          style={{
-            backgroundImage: currentImage,
-            backgroundSize: "cover",
-            transition: 'background-image 1s',
-            transitionDelay:'2s'
-          }}
-          id={tagId}
+          className="w-full h-full bg-[#021500] glasss bg-opacity-60 space-y-10 pl-6"
+          style={{ backdropFilter: "blur(2px)" }}
         >
-          <ParticlesComponent/>
-          <div
-            className="w-full h-full bg-[#021500] glasss bg-opacity-60 space-y-10 pl-6"
-            style={{ backdropFilter: "blur(2px)" }}
-          >
-            <div className="flex h-full justify-around items-center">
-                <Slide triggerOnce={true}>
+          <div className="flex h-full justify-around items-center">
+            <Slide triggerOnce={true}>
               <div className="space-y-6">
                 <p className="text-6xl font-mogra md:text-[3rem] lg:text-[12rem]  text-white drop-shadow-md leading-none">
                   GeoPasture
@@ -97,26 +97,26 @@ const HomeSection = ({ tagId }: Props) => {
                         </button>
                       </DialogTrigger>
                       <DialogContent className="sm:max-w-md text-white">
-            <DialogHeader>
-              <DialogTitle className="font-bold hover:text-[#47f969] text-2xl">
-                Get App
-              </DialogTitle>
-            </DialogHeader>
-            <DialogDescription className="text-2xl hover:text-[#47f969]">
-              GeoPasture App Coming Soon!
-            </DialogDescription>
-            <DialogFooter className="sm:justify-center">
-              <DialogClose asChild>
-                <Button
-                  type="button"
-                  className="bg-white hover:bg-[#47f969] text-black"
-                  variant="secondary"
-                >
-                  Close
-                </Button>
-              </DialogClose>
-            </DialogFooter>
-          </DialogContent>
+                        <DialogHeader>
+                          <DialogTitle className="font-bold hover:text-[#47f969] text-2xl">
+                            Get App
+                          </DialogTitle>
+                        </DialogHeader>
+                        <DialogDescription className="text-2xl hover:text-[#47f969]">
+                          GeoPasture App Coming Soon!
+                        </DialogDescription>
+                        <DialogFooter className="sm:justify-center">
+                          <DialogClose asChild>
+                            <Button
+                              type="button"
+                              className="bg-white hover:bg-[#47f969] text-black"
+                              variant="secondary"
+                            >
+                              Close
+                            </Button>
+                          </DialogClose>
+                        </DialogFooter>
+                      </DialogContent>
                     </Dialog>
                   </div>
                 </div>
@@ -138,9 +138,9 @@ const HomeSection = ({ tagId }: Props) => {
                 </Image>
               </div>
             </Slide> */}
-            </div>
           </div>
         </div>
+      </div>
     </>
   );
 };
