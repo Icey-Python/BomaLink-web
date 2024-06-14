@@ -9,7 +9,7 @@ const Partners = () => {
       <h3 className="text-6xl text-green-900 font-poppins font-bold mx-auto">
         Partners
       </h3>
-      <div className="flex flex-col lg:flex-row  lg:justify-around items-center space-x-4 lg-px-20 lg-py-20  mt-5">
+      <div className="flex flex-col justify-between lg:flex-row  lg:justify-around items-center space-x-4 lg-px-20 lg-py-20  mt-5">
         <Bounce>
           <Link href={"https://www.jkuat.ac.ke"}>
             <Image
@@ -17,7 +17,7 @@ const Partners = () => {
               alt="Partners"
               height={0}
               width={150}
-              // style={{ width: "100px", height: "100px" }}
+              style={{ width: "auto", height: "120px" }}
             />
           </Link>
         </Bounce>
@@ -29,7 +29,7 @@ const Partners = () => {
               alt="Partners"
               height={0}
               width={200}
-              // style={{ width: "auto", height: "150px" }}
+              style={{ width: "auto", height: "120px" }}
             />
           </Link>
         </Bounce>
