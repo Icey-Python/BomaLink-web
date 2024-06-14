@@ -9,7 +9,7 @@ const Partners = () => {
       <h3 className="text-6xl text-green-900 font-poppins font-bold mx-auto">
         Partners
       </h3>
-      <div className="flex flex-col justify-between lg:flex-row  lg:justify-around items-center space-y-4 lg-px-20 lg-py-20  lg:space-x-4 mt-5">
+      <div className="flex flex-col justify-between lg:flex-row  lg:justify-around items-center space-y-6 lg-px-20 lg-py-20  lg:space-x-4 mt-5">
         <Bounce>
           <Link href={"https://www.jkuat.ac.ke"}>
             <Image
