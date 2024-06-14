@@ -20,7 +20,7 @@ const Team = ({ tagId, footerId }: Props) => {
       </h1>
       <div className="flex place-content-center items-center mb-5 pb-5">
         <Image src="/icons/brain-icon.svg" alt="brain" width={30} height={30} />
-        <p className="text-sm lg:text-2xl italic  p-2.5  ml-0">
+        <p className="text-sm lg:text-2xl italic   p-2.5  ml-0">
           The brains behind the product
         </p>
       </div>

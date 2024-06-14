@@ -75,14 +75,14 @@ const HomeSection = ({ tagId }: Props) => {
           <div className="flex h-full justify-around items-center">
             <Slide triggerOnce={true}>
               <div className="space-y-6">
-                <p className="text-6xl font-mogra md:text-[3rem] lg:text-[12rem]  text-white drop-shadow-md leading-none">
+                <p className="text-5xl font-mogra md:text-[3rem] lg:text-[10rem]  text-white drop-shadow-md leading-none">
                   GeoPasture
                 </p>
                 <div className="space-y-8">
-                  <p className="text-xl font-monteserrat lg:text-6xl text-[#D6F9C6]  drop-shadow-md leading-none font-extralight">
+                  <p className="text-xl font-monteserrat md:text-3xl lg:text-5xl text-[#D6F9C6]  drop-shadow-md leading-none font-extralight">
                     Maamuzi sahihi, ushirikiano wa kudumu
                   </p>
-                  <p className="text-xl w-full text-white font-poppins lg:text-4xl ">
+                  <p className="text-xl w-full text-white font-poppins lg:text-3xl ">
                     A mobile app aimed at fostering peaceful coexistence <br />{" "}
                     between Kenyan pastoralists and agriculturalists <br /> by
                     creating a digital platform that addresses resource
