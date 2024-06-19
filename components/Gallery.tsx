@@ -16,10 +16,8 @@ const images: string[] = [
     "/group-1.jpeg",
     "/group-2.jpeg",
     "/group-3.jpeg",
-    "/group-4.jpeg",
     "/group-6.jpeg",
-    "/group-8.jpg",
-    "/group-9.jpg"
+    "/group-9.jpeg"
 ]
 export function Gallery({tagId}:Props) {
   const plugin = React.useRef(
