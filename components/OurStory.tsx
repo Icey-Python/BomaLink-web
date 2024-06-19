@@ -34,11 +34,8 @@ const OurStory = ({ tagId }: Props) => {
         <ScrollCard path={"/cows-4.jpeg"} />
         <ScrollCard path={"/cows-2.jpeg"} />
         <ScrollCard path={"/cows.png"} />
-        <ScrollCard path={"/cows-1.jpeg"} />
         <ScrollCard path={"/cows-3.jpeg"} />
-        <ScrollCard path={"/cows-5.jpeg"} />
-        <ScrollCard path={"/cows-6.jpeg"} />
-        <ScrollCard path={"/cows-7.jpeg"} />
+        <ScrollCard path={"/cows-6.jpeg"} /> 
         <ScrollCard path={"/cows-8.jpg"} />
         <ScrollCard path={"/cows-9.jpg"} />
         <ScrollCard path={"/cows-10.jpg"} />
