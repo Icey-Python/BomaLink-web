@@ -26,9 +26,14 @@ const Header = () => {
 
   return (
     <div className="flex justify-between items-center text-white backdrop-blur-2xl w-screen h-16 fixed top-0 left-0 z-40 bg-[#021500] bg-opacity-20 drop-shadow-2xl shadow shadow-[#021500]-500/40">
-      <Link href="#Home">
-        <Image src="/Logo.png" alt="logo" width={80} height={80}></Image>
-      </Link>
+        <Image className="cursor-pointer" src="/Logo.png" alt="logo" width={80} height={80} onClick={()=>{
+          window.scrollTo(
+            {
+              top:0,
+              behavior:'smooth'
+            }
+          )
+        }}></Image>
 
       <div className="hidden lg:flex visible bg-transparent pr-10 text-white font-bold my-auto w-fit items-center">
         <Navlink label="HOME" path="#Home"></Navlink>
