@@ -71,14 +71,7 @@ const OurStory = ({ tagId }: Props) => {
         />
         {/* <span className="bg-[#224103] text-sm lg:text-2xl text-white font-bold p-2 rounded-3xl mt-8">Our story</span> */}
         <p className="text-sm h-fit  mt-2 px-5 md:px-20 lg:px-20 lg:mt-20 lg:text-xl z-20">
-          Our mobile application, GeoPasture, is designed to promote peaceful
-          coexistence between pastoralists and crop farmers by addressing
-          resource conflicts. GeoPasture offers real-time updates on pasture
-          availability, weather forecasts, and GPS-enabled animal tracking,
-          empowering pastoralists to make informed decisions. By fostering
-          dialogue and providing crucial decision-making support, our app aims
-          to enhance mutual understanding and collaboration between these
-          communities, ensuring sustainable management of shared resources.
+         GeoPasture resolves resource conflicts between pastoralists and crop farmers with real-time pasture updates, weather forecasts, and GPS animal tracking. It fosters dialogue and collaboration for sustainable resource management.
         </p>
       </div>
     </section>

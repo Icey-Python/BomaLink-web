@@ -8,7 +8,7 @@ import { Gallery } from "@/components/Gallery";
 export default function Home() {
   return (
     <main className="overflow-hidden relative">
-      <Header />
+      <Header/>
       <HomeSection tagId="Home" />
       <OurStory tagId="story" />
       <OurServices tagId="service" />
