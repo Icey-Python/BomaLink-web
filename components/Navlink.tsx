@@ -9,6 +9,7 @@ interface NavlinkProps {
 
 const Navlink: React.FC<NavlinkProps> = ({ label, path }) => {
   const [isActive, setIsActive] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleClick = (event: React.MouseEvent) => {
     event.preventDefault();
@@ -22,7 +23,7 @@ const Navlink: React.FC<NavlinkProps> = ({ label, path }) => {
     }
   };
 
-   useEffect(() => {
+  useEffect(() => {
     const target = document.getElementById(path.replace('#', ''));
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -46,13 +47,43 @@ const Navlink: React.FC<NavlinkProps> = ({ label, path }) => {
   }, [path]);
 
   return (
-     <Link
-      className={`w-screen lg:w-fit transition-all hover:duration-700 ease-in duration-400 px-3 mx-3 rounded-full cursor-pointer hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-white focus:active my-3 ${isActive ? 'active' : ''}`}
-      href={path}
-      onClick={handleClick}
+    <div 
+      className="relative"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      {label}
-    </Link>
+      <Link
+        className={`relative px-3 py-2 text-base font-medium transition-all duration-300 ${
+          isActive 
+            ? 'text-[#47f969]' 
+            : 'text-white hover:text-[#D6F9C6]'
+        }`}
+        href={path}
+        onClick={handleClick}
+      >
+        {label}
+        <span 
+          className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#47f969] to-[#D6F9C6] rounded-full transform origin-bottom transition-all duration-300 ${
+            isActive 
+              ? 'scale-x-100 opacity-100' 
+              : isHovered 
+                ? 'scale-x-50 opacity-70' 
+                : 'scale-x-0 opacity-0'
+          }`}
+        />
+      </Link>
+      
+      {/* Glow effect */}
+      <span
+        className={`absolute -bottom-1 left-0 w-full h-1 blur-sm bg-[#47f969]/40 rounded-full transition-opacity duration-300 ${
+          isActive 
+            ? 'opacity-80' 
+            : isHovered 
+              ? 'opacity-40' 
+              : 'opacity-0'
+        }`}
+      />
+    </div>
   );
 };
 
